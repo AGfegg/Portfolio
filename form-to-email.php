@@ -6,7 +6,7 @@ echo "error; you need to sumbit the form!;"
 $name =$_POST['name'];
 $visitor_email = $_POST['email'];
 $message =$_POST['message'];
-validate first
+//validate first
 if (empty($sname)||empty($visitor_email))
 {echo "Name and email are mandatory!";exit;}
 
@@ -19,9 +19,8 @@ $email_body="You have recieves a new message from the user $name. \n".
 $to = "aliyafeggins@gmail.com";
 $headers= "from: $email_from \r\n";
 
-send email
+//send email
 mail($to,$email_subject,$email_body;$headers);
 $to="aliyafeggins@gmail.com";
 $headers="from: $email_fromi";
-
 ?>
